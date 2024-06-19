@@ -1,0 +1,179 @@
+@font-face {
+    font-family: 'MiFuentePersonalizada';
+    src: url('../../fonts/MiFuentePersonalizada.woff2') format('woff2'),
+         url('../../fonts/MiFuentePersonalizada.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Roboto', 'MiFuentePersonalizada', Arial, sans-serif;
+    background: url('../../img/Calidad.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.alerta {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    font-size: 14px;
+    text-align: center;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.alerta__error {
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1;
+}
+
+.alerta__ocultar {
+    opacity: 0;
+    height: 0;
+    padding: 0;
+    margin-bottom: 0;
+    overflow: hidden;
+    transition: opacity 0.5s ease-in-out, height 0.5s ease-in-out, padding 0.5s ease-in-out, margin-bottom 0.5s ease-in-out;
+}
+
+.contenedor {
+    background-color: #136810;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    width: 800px;
+    max-width: 100%;
+}
+
+.imagen-contenedor {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+}
+
+.imagen-contenedor img {
+    max-width: 100%;
+    height: auto;
+}
+
+.formulario-contenedor {
+    padding: 50px;
+    width: 30%;
+}
+
+h2 {
+    font-family: 'Roboto', Tahoma, sans-serif;
+    color: #ebfa20;
+    font-size: 40px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+label {
+    font-family: 'Oswald', sans-serif;
+    display: block;
+    margin-bottom: auto;
+    color: #000000;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.input-wrapper {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    padding-left: 40px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Pseudo-elementos para los iconos */
+.input-wrapper::before {
+    content: '';
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(3px);
+    width: 20px;
+    height: 20px;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.input-wrapper#username-wrapper::before {
+    background-image: url('../../img/usuario.jpg');
+}
+
+.input-wrapper#password-wrapper::before {
+    background-image: url('../../img/contraseña.png');
+}
+
+input[type="text"]::placeholder,
+input[type="password"]::placeholder {
+    color: #ccc;
+}
+
+input[type="submit"] {
+    font-family: 'Oswald', sans-serif;
+    background-color: #ebfa20;
+    color: #000000;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+input[type="submit"]:hover {
+    background-color: #73ff00;
+}
+
+.oswald-title {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+}
+
+.oswald-label {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-weight: bold;
+}
+
+.oswald-button {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
